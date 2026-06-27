@@ -49,8 +49,13 @@ wishBtn.onclick = () => {
   result.innerText = "✨ Wish kamu: " + wish;
 
   input.value = "";
-}
 
+  // 🔥 TAMBAHAN INI
+  setTimeout(() => {
+    wishPage.classList.add("hidden");
+    letterPage.classList.remove("hidden");
+  }, 2000);
+};
 const message =
 `Haiii, Happy Birthday yaa! 🥳🎂💛
 
