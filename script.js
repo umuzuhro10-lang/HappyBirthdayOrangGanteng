@@ -19,19 +19,18 @@ giftBtn.onclick = () => {
 
 const flame = document.getElementById("flame");
 
-blowBtn.onclick = ()=>{
+blowBtn.onclick = () => {
 
-flame.innerHTML="💨";
+    flame.style.opacity = "0";
 
-setTimeout(()=>{
+    setTimeout(() => {
 
-cakePage.classList.add("hidden");
+        cakePage.classList.add("hidden");
+        letterPage.classList.remove("hidden");
 
-letterPage.classList.remove("hidden");
+        typeMessage();
 
-typeMessage();
-
-},1500);
+    },1500);
 
 }
 const message =
