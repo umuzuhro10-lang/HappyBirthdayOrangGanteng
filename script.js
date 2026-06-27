@@ -35,27 +35,29 @@ blowBtn.onclick = () => {
     },1500);
 
 }
+const wishBtn = document.getElementById("wishBtn");
+
+blowBtn.onclick = () => {
+
+    flame.style.opacity = "0";
+
+    setTimeout(() => {
+
+        cakePage.classList.add("hidden");
+        wishPage.classList.remove("hidden");
+
+    },1500);
+
+}
+
 wishBtn.onclick = () => {
-  const input = document.getElementById("wishInput");
-  const result = document.getElementById("wishResult");
 
-  const wish = input.value;
-
-  if (wish === "") {
-    result.innerText = "Tulis wish dulu ya 😊";
-    return;
-  }
-
-  result.innerText = "✨ Wish kamu: " + wish;
-
-  input.value = "";
-
-  // 🔥 TAMBAHAN INI
-  setTimeout(() => {
     wishPage.classList.add("hidden");
     letterPage.classList.remove("hidden");
-  }, 2000);
-};
+
+    typeMessage();
+
+}
 const message =
 `Haiii, Happy Birthday yaa! 🥳🎂💛
 
