@@ -48,3 +48,30 @@ function typeMessage() {
         }
     }, 40);
 }
+.giftBox{
+    width:220px;
+    animation:shake 1s infinite;
+}
+
+.cake{
+    width:220px;
+    animation:bounce 2s infinite;
+}
+
+#flame{
+    font-size:35px;
+    margin-top:-20px;
+    animation:flicker .2s infinite alternate;
+}
+
+@keyframes flicker{
+
+from{
+transform:scale(1);
+}
+
+to{
+transform:scale(.8) rotate(-8deg);
+}
+
+}
