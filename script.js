@@ -1,7 +1,7 @@
 const welcome = document.getElementById("welcome");
 const giftPage = document.getElementById("giftPage");
-const cakePage = document.getElementById("cakePage");
 const wishPage = document.getElementById("wishPage");
+const cakePage = document.getElementById("cakePage");
 const letterPage = document.getElementById("letterPage");
 
 const giftBtn = document.getElementById("giftBtn");
