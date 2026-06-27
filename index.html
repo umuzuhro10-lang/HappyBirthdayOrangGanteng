@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday 🎂</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Awan -->
+<div class="cloud cloud1"></div>
+<div class="cloud cloud2"></div>
+
+<!-- Balon -->
+<div class="balloon balloon1"></div>
+<div class="balloon balloon2"></div>
+<div class="balloon balloon3"></div>
+
+<!-- Halaman Awal -->
+<section id="welcome">
+
+    <img src="characters.png" class="character">
+
+    <h1>🎉 Psst... 🎉</h1>
+
+    <h2>Hari ini ada yang ulang tahun!!</h2>
+
+    <p>Aku punya hadiah kecil buat kamu 🤍</p>
+
+    <button id="giftBtn">
+        🎁 Buka Hadiah
+    </button>
+
+</section>
+
+<!-- Kotak Hadiah -->
+<section id="giftPage" class="hidden">
+
+    <div class="giftBox">
+        🎁
+    </div>
+
+    <h2>Tadaaaa!!</h2>
+
+</section>
+
+<!-- Kue -->
+<section id="cakePage" class="hidden">
+
+    <div class="cake">
+
+        🎂
+
+    </div>
+
+    <h2>Tiup lilinnya dulu yaa 💛</h2>
+
+    <button id="blowBtn">
+
+        💨 Tiup Lilin
+
+    </button>
+
+</section>
+
+<!-- Surat -->
+<section id="letterPage" class="hidden">
+
+    <div class="letter">
+
+        <h2>Happy Birthday 🥳</h2>
+
+        <p id="typing"></p>
+
+    </div>
+
+    <button id="musicBtn">
+
+        🎵 Putar Musik
+
+    </button>
+
+</section>
+
+<!-- Konfeti -->
+<canvas id="confetti"></canvas>
+
+<script src="script.js"></script>
+
+</body>
+</html>
