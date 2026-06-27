@@ -49,7 +49,7 @@ wishBtn.onclick = () => {
   result.innerText = "✨ Wish kamu: " + wish;
 
   input.value = "";
-};
+}
 
 const message =
 `Haiii, Happy Birthday yaa! 🥳🎂💛
