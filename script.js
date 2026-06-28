@@ -18,8 +18,6 @@ giftBtn.onclick = () => {
     }, 2500);
 };
 
-const flame = document.getElementById("flame");
-
 const wishBtn = document.getElementById("wishBtn");
 
 blowBtn.onclick = () => {
@@ -43,6 +41,7 @@ wishBtn.onclick = () => {
     typeMessage();
 
 }
+
 const message =
 `Haiii, Happy Birthday yaa! 🥳🎂💛
 
