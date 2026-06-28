@@ -1,5 +1,6 @@
 const welcome = document.getElementById("welcome");
 const giftPage = document.getElementById("giftPage");
+const wishPage = document.getElementById("wishPage");
 const cakePage = document.getElementById("cakePage");
 const letterPage = document.getElementById("letterPage");
 
@@ -19,21 +20,26 @@ giftBtn.onclick = () => {
 
 const flame = document.getElementById("flame");
 
+const wishBtn = document.getElementById("wishBtn");
+
 blowBtn.onclick = () => {
 
     flame.style.opacity = "0";
 
     setTimeout(() => {
-
-        cakePage.classList.add("hidden");
-        letterPage.classList.remove("hidden");
-
-        typeMessage();
+wishPage.classList.remove("hidden");
 
     },1500);
+cakePage.classList.add("hidden");
+}
+wishBtn.onclick = () => {
+
+    wishPage.classList.add("hidden");
+    letterPage.classList.remove("hidden");
+
+    typeMessage();
 
 }
-
 const message =
 `Haiii, Happy Birthday yaa! 🥳🎂💛
 
