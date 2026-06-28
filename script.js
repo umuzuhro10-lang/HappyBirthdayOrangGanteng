@@ -6,7 +6,6 @@ const letterPage = document.getElementById("letterPage");
 
 const giftBtn = document.getElementById("giftBtn");
 const blowBtn = document.getElementById("blowBtn");
-const wishBtn = document.getElementById("wishBtn");
 const typing = document.getElementById("typing");
 
 giftBtn.onclick = () => {
@@ -28,30 +27,22 @@ blowBtn.onclick = () => {
     flame.style.opacity = "0";
 
     setTimeout(() => {
-wishPage.classList.remove("hidden");
+
+        cakePage.classList.add("hidden");
+        wishPage.classList.remove("hidden");
 
     },1500);
-cakePage.classList.add("hidden");
+
 }
+
 wishBtn.onclick = () => {
-  const input = document.getElementById("wishInput");
-  const result = document.getElementById("wishResult");
 
-  const wish = input.value;
-
-  if (wish === "") {
-    result.innerText = "Tulis wish dulu ya 😊";
-    return;
-  }
-
-  result.innerText = "✨ Wish kamu: " + wish;
-
-  input.value = "";
-setTimeout(() => {
     wishPage.classList.add("hidden");
     letterPage.classList.remove("hidden");
-  }, 2000);
-};
+
+    typeMessage();
+
+}
 const message =
 `Haiii, Happy Birthday yaa! 🥳🎂💛
 
