@@ -376,3 +376,8 @@ transform:rotate(-45deg) scale(.8);
 }
 
 }
+.giftGif{
+    width:250px;
+    display:block;
+    margin:20px auto;
+}
