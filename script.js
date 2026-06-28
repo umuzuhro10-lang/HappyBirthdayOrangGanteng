@@ -17,11 +17,23 @@ giftBtn.onclick = () => {
     }, 2500);
 };
 
-blowBtn.onclick = () => {
-    cakePage.classList.add("hidden");
-    letterPage.classList.remove("hidden");
-    typeMessage();
-};
+const flame = document.getElementById("flame");
+
+blowBtn.onclick = ()=>{
+
+flame.innerHTML="💨";
+
+setTimeout(()=>{
+
+cakePage.classList.add("hidden");
+
+letterPage.classList.remove("hidden");
+
+typeMessage();
+
+},1500);
+
+}
 
 const message =
 `Haiii, Happy Birthday yaa! 🥳🎂💛
