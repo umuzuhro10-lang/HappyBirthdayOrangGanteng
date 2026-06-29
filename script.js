@@ -58,23 +58,22 @@ musicBtn.onclick = () => {
 
     if (bgMusic.paused) {
         bgMusic.play();
-        musicBtn.innerHTML = "⏸️ Pause Musik";
+        musicBtn.innerHTML = "🎵 Putar Musik";
     } else {
         bgMusic.pause();
-        musicBtn.innerHTML = "🎵 Putar Musik";
+        musicBtn.innerHTML = "⏸️ Pause Musik";
     }
 
 };
 
-const message = `Haiii, Happy Birthday yaa! 🥳🎂💛
+const message = `Hallooo sayangkuuu, Happy Birthday yaa! 🥳🎂💛
 
-Semoga di umur yang baru ini kamu selalu sehat, bahagia, dan semua impianmu tercapai.
+Semoga di umur yang baru ini kamu selalu sehattt, bahagiaaa, dan semua impianmu tercapai.
+Teruslah jdi orang baikkk dan jadii diri sendiriii. Semoga makin ganteng (walaupun udah gantengnya kebangetan 🤭), makin sukses, dan makin sayang sama aku yaa. 
+Jangan nakal, jangan sering begadang, pokoknya jaga kesehatan, jangan telat makan, dan tetap semangat menjalani hari-harimu.
+dannn yg terakhir smoga tahun ini penuh dengan kebahagiaan, rezeki yang lancar, dan banyak momen indah. Aamiin.
 
-Terima kasih sudah menjadi orang yang baik. Jangan lupa selalu jaga kesehatan, jangan telat makan, dan tetap semangat menjalani hari-harimu.
-
-Semoga tahun ini penuh dengan kebahagiaan, rezeki yang lancar, dan banyak momen indah.
-
-Selamat ulang tahun! 🎉🤍`;
+Peluk, cium, dan sayang yang banyak buat kamu! love u Muahhh! 😚💗`;
 
 let i = 0;
 
