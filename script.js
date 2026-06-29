@@ -21,8 +21,9 @@ musicBtn.onclick = () => {
 };
 
 giftBtn.onclick = () => {
-    bgMusic.play(); // musik mulai dari awal
-
+   if (bgMusic) {
+        bgMusic.play();
+    }
     welcome.classList.add("hidden");
     giftPage.classList.remove("hidden");
 
