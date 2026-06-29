@@ -6,14 +6,56 @@ const letterPage = document.getElementById("letterPage");
 
 const giftBtn = document.getElementById("giftBtn");
 const blowBtn = document.getElementById("blowBtn");
+const wishBtn = document.getElementById("wishBtn");
+
 const typing = document.getElementById("typing");
+const flame = document.getElementById("flame");
 
 const musicBtn = document.getElementById("musicBtn");
 const bgMusic = document.getElementById("bgMusic");
-const flame = document.getElementById("flame");
-const wishBtn = document.getElementById("wishBtn");
 
+// Tombol buka hadiah
+giftBtn.onclick = () => {
+
+    welcome.classList.add("hidden");
+    giftPage.classList.remove("hidden");
+
+    if (bgMusic) {
+        bgMusic.play().catch(() => {});
+    }
+
+    setTimeout(() => {
+        giftPage.classList.add("hidden");
+        cakePage.classList.remove("hidden");
+    }, 2500);
+};
+
+// Tiup lilin
+blowBtn.onclick = () => {
+
+    flame.style.opacity = "0";
+
+    setTimeout(() => {
+        cakePage.classList.add("hidden");
+        wishPage.classList.remove("hidden");
+    }, 1500);
+
+};
+
+// Wish Done
+wishBtn.onclick = () => {
+
+    wishPage.classList.add("hidden");
+    letterPage.classList.remove("hidden");
+
+    i = 0;
+    typeMessage();
+
+};
+
+// Tombol musik
 musicBtn.onclick = () => {
+
     if (bgMusic.paused) {
         bgMusic.play();
         musicBtn.innerHTML = "⏸️ Pause Musik";
@@ -21,46 +63,10 @@ musicBtn.onclick = () => {
         bgMusic.pause();
         musicBtn.innerHTML = "🎵 Putar Musik";
     }
+
 };
 
-giftBtn.onclick = () => {
-   if (bgMusic) {
-        bgMusic.play();
-    }
-    welcome.classList.add("hidden");
-    giftPage.classList.remove("hidden");
-
-    setTimeout(() => {
-        giftPage.classList.add("hidden");
-        cakePage.classList.remove("hidden");
-    }, 2500);
-};
-const wishBtn = document.getElementById("wishBtn");
-
-blowBtn.onclick = () => {
-
-    flame.style.opacity = "0";
-
-    setTimeout(() => {
-
-        cakePage.classList.add("hidden");
-        wishPage.classList.remove("hidden");
-
-    },1500);
-
-}
-
-wishBtn.onclick = () => {
-
-    wishPage.classList.add("hidden");
-    letterPage.classList.remove("hidden");
-
-    typeMessage();
-
-}
-
-const message =
-`Haiii, Happy Birthday yaa! 🥳🎂💛
+const message = `Haiii, Happy Birthday yaa! 🥳🎂💛
 
 Semoga di umur yang baru ini kamu selalu sehat, bahagia, dan semua impianmu tercapai.
 
@@ -73,14 +79,18 @@ Selamat ulang tahun! 🎉🤍`;
 let i = 0;
 
 function typeMessage() {
+
     typing.innerHTML = "";
 
     const interval = setInterval(() => {
+
         typing.innerHTML += message.charAt(i);
         i++;
 
         if (i >= message.length) {
             clearInterval(interval);
         }
+
     }, 40);
+
 }
