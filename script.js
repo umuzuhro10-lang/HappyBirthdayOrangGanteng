@@ -58,10 +58,10 @@ musicBtn.onclick = () => {
 
     if (bgMusic.paused) {
         bgMusic.play();
-        musicBtn.innerHTML = "🎵 Putar Musik";
+        musicBtn.innerHTML = "⏸️ Pause Musik";
     } else {
         bgMusic.pause();
-        musicBtn.innerHTML = "⏸️ Pause Musik";
+        musicBtn.innerHTML = "🎵 Putar Musik";
     }
 
 };
