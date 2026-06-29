@@ -8,6 +8,12 @@ const giftBtn = document.getElementById("giftBtn");
 const blowBtn = document.getElementById("blowBtn");
 const typing = document.getElementById("typing");
 
+const musicBtn = document.getElementById("musicBtn");
+const bgMusic = document.getElementById("bgMusic");
+musicBtn.onclick = () => {
+    bgMusic.play();
+};
+
 giftBtn.onclick = () => {
     welcome.classList.add("hidden");
     giftPage.classList.remove("hidden");
@@ -67,15 +73,5 @@ function typeMessage() {
         }
     }, 40);
 }
-const music = document.getElementById("bgMusic");
 const musicBtn = document.getElementById("musicBtn");
-
-musicBtn.addEventListener("click", () => {
-    if (music.paused) {
-        music.play();
-        musicBtn.textContent = "⏸️ Pause Musik";
-    } else {
-        music.pause();
-        musicBtn.textContent = "🎵 Putar Musik";
-    }
-});
+const bgMusic = document.getElementById("bgMusic");
