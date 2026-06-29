@@ -67,3 +67,15 @@ function typeMessage() {
         }
     }, 40);
 }
+const music = document.getElementById("bgMusic");
+const musicBtn = document.getElementById("musicBtn");
+
+musicBtn.addEventListener("click", () => {
+    if (music.paused) {
+        music.play();
+        musicBtn.textContent = "⏸️ Pause Musik";
+    } else {
+        music.pause();
+        musicBtn.textContent = "🎵 Putar Musik";
+    }
+});
