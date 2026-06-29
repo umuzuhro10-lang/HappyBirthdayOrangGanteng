@@ -407,18 +407,3 @@ transform:rotate(-45deg) scale(.8);
     font-size:18px;
     cursor:pointer;
 }
-#musicBtn {
-    padding: 12px 24px;
-    border: none;
-    border-radius: 30px;
-    background: #ff69b4;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: 0.3s;
-}
-
-#musicBtn:hover {
-    background: #ff1493;
-}
