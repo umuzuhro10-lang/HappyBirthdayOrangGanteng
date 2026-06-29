@@ -10,6 +10,9 @@ const typing = document.getElementById("typing");
 
 const musicBtn = document.getElementById("musicBtn");
 const bgMusic = document.getElementById("bgMusic");
+const flame = document.getElementById("flame");
+const wishBtn = document.getElementById("wishBtn");
+
 musicBtn.onclick = () => {
     if (bgMusic.paused) {
         bgMusic.play();
@@ -81,5 +84,3 @@ function typeMessage() {
         }
     }, 40);
 }
-const musicBtn = document.getElementById("musicBtn");
-const bgMusic = document.getElementById("bgMusic");
