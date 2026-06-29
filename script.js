@@ -11,10 +11,18 @@ const typing = document.getElementById("typing");
 const musicBtn = document.getElementById("musicBtn");
 const bgMusic = document.getElementById("bgMusic");
 musicBtn.onclick = () => {
-    bgMusic.play();
+    if (bgMusic.paused) {
+        bgMusic.play();
+        musicBtn.innerHTML = "⏸️ Pause Musik";
+    } else {
+        bgMusic.pause();
+        musicBtn.innerHTML = "🎵 Putar Musik";
+    }
 };
 
 giftBtn.onclick = () => {
+    bgMusic.play(); // musik mulai dari awal
+
     welcome.classList.add("hidden");
     giftPage.classList.remove("hidden");
 
@@ -23,7 +31,6 @@ giftBtn.onclick = () => {
         cakePage.classList.remove("hidden");
     }, 2500);
 };
-
 const wishBtn = document.getElementById("wishBtn");
 
 blowBtn.onclick = () => {
